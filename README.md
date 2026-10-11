@@ -160,7 +160,7 @@ See [Detailed contribution record](docs/MY_CONTRIBUTIONS.md) for ownership bound
 ```mermaid
 stateDiagram-v2
     [*] --> Evaluated: AI verification complete
-    Evaluated --> Pending: confidence < 70%
+    Evaluated --> Pending: confidence below 70 percent
     Evaluated --> Pending: uncertain verdict
     Evaluated --> Pending: source conflict
     Evaluated --> Pending: 15% audit sample
