@@ -81,7 +81,7 @@ The trade-off is weaker database-level validation for nested content, so Pydanti
 
 ### Queue state is separate from review evidence
 
-`review_queue` represents operational work (`PENDING`, `IN_REVIEW`, `COMPLETED`). `reviews` represents the durable human judgement. Keeping them separate allows queue policy to evolve without rewriting ground-truth data.
+`review_queue` represents operational work; the implemented flow uses `PENDING` and `COMPLETED`, while the model reserves `IN_REVIEW` for a future claim/lease workflow. `reviews` represents the durable human judgement. Keeping them separate allows queue policy to evolve without rewriting ground-truth data.
 
 ### One review per claim
 
@@ -100,9 +100,8 @@ AI calls record provider, model, stage, tokens, and estimated cost data. Adminis
 ```mermaid
 stateDiagram-v2
     [*] --> PENDING: queue rule matched
-    PENDING --> IN_REVIEW: reviewer opens task
-    IN_REVIEW --> COMPLETED: valid ground truth submitted
+    PENDING --> COMPLETED: valid ground truth submitted
     COMPLETED --> [*]
 ```
 
-A transaction creates the human review and completes the associated queue item together, avoiding a state where a decision exists but the task still appears pending.
+A transaction creates the human review and completes the associated queue item together, avoiding a state where a decision exists but the task still appears pending. Although `IN_REVIEW` is present in the model comment, no current endpoint transitions into it.

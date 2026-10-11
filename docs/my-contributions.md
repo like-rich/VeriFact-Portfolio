@@ -20,6 +20,20 @@ The record below was prepared by reviewing the private repository's authored com
 | Integration | Connect review routing to verification and navigation | Backend and frontend integration |
 | Project documentation | Architecture, setup and deployment documentation | Root documentation |
 
+## Public evidence pack
+
+Because the original commit pages are private, this portfolio provides independently written, inspectable evidence without republishing course code:
+
+| Evidence | What it demonstrates |
+| --- | --- |
+| [Consensus algorithm](consensus-algorithm.md) | Inputs, weighted voting pseudocode, worked example, complexity, and alternatives |
+| [Reviewer smart queue](reviewer-queue.md) | Routing rules, persistence boundaries, API flow, state accuracy, and production trade-offs |
+| [AI workflow](ai-workflow.md) | End-to-end decomposition, retrieval, assessment, failure handling, and review handoff |
+| [API implementation review](api-design.md) | Request shapes checked against code and an explicit token-boundary critique |
+| [Automated test results](test-results.md) | 18 backend and 17 frontend tests passed, with scope limitations stated |
+
+These documents are portfolio explanations written from my understanding of the system. They are not copies or lightly modified extracts of the private implementation.
+
 ## 1. AI verification pipeline
 
 I developed the core pipeline that turns an unstructured user statement into an explainable result.
