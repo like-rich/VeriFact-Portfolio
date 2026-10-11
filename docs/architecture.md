@@ -1,6 +1,6 @@
 # Architecture and design decisions
 
-[← Portfolio home](../README.md)
+[← 中文首页](../README.md) · [English home](../README_EN.md)
 
 ## Context
 

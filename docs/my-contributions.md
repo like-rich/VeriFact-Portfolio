@@ -1,6 +1,6 @@
 # My contributions — Kunyu Li (`like-rich`)
 
-[← Portfolio home](../README.md) · [中文首页](../README.zh-CN.md)
+[← 中文首页](../README.md) · [English home](../README_EN.md)
 
 ## Scope
 

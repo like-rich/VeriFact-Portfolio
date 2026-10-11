@@ -1,6 +1,6 @@
 # Data model
 
-[← Portfolio home](../README.md)
+[← 中文首页](../README.md) · [English home](../README_EN.md)
 
 The production schema is managed through Alembic migrations. This page shows the conceptual entities relevant to the portfolio; it is not a schema dump from the private repository.
 
