@@ -25,7 +25,19 @@ VeriFact fact-checks text, images, audio, video, and URLs. It decomposes indepen
 
 ## Product preview
 
-Real interface screenshots and a demo GIF are not public yet because permission to reuse course and team UI material still needs confirmation. Once approved, the portfolio will add the landing page, verification report, reviewer queue, and analytics dashboard with all account and user data removed. Illustrative mockups will not be presented as running-product evidence.
+These captures show the project's actual React frontend running locally with built-in **mock data**. Permission to publish the interface material has been confirmed. Verdicts, source links, confidence values, and dashboard numbers are demonstration fixtures, not evidence of a live LLM run or measured evaluation performance.
+
+![VeriFact 30-second interface walkthrough using mock data](assets/demo.gif)
+
+*30-second screenshot sequence: claim input → verification report → reviewer queue and workbench → analytics.*
+
+| Landing page | AI verification report |
+| --- | --- |
+| [![Landing page](assets/landing-page.png)](assets/landing-page.png) | [![Verdict, evidence, and sources](assets/verification-result.png)](assets/verification-result.png) |
+| **Reviewer queue** | **AI evaluation dashboard (metric area)** |
+| [![Human review queue](assets/reviewer-queue.png)](assets/reviewer-queue.png) | [![AI evaluation dashboard](assets/analytics.png)](assets/analytics.png) |
+
+[Review workbench](assets/reviewer-workbench.png) · [Capture details and demo scope](docs/product-demo.md)
 
 ## My contributions
 
@@ -79,7 +91,7 @@ This is my individual final course result, not a claim that the team project rec
 
 ## Source and permission notice
 
-To respect course policy, team ownership, and academic-integrity obligations, this repository publishes portfolio documentation and diagrams only—not private source code, credentials, datasets, or team Git history. Releasing personal code or real UI material will be considered only after confirming university policy and team permission.
+This repository publishes portfolio documentation, diagrams, and interface screenshots and a GIF confirmed for public use. Source code remains in the private UNSW team repository. Credentials, real user data, private datasets, and team Git history are excluded. Publishing personal source code requires separate permission.
 
 No open-source licence is included at this stage. The absence of a licence does not grant permission to copy, modify, or redistribute the material.
 

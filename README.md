@@ -25,7 +25,19 @@ VeriFact 支持文本、图片、音频、视频和 URL 事实核查。系统先
 
 ## 产品展示
 
-真实界面截图与 Demo GIF 尚未公开，原因是仍需确认课程及团队对 UI 素材的公开授权。确认后计划补充首页、核查报告、Reviewer 队列和 Analytics 看板，并清除账户及用户数据。本仓库不会用示意图冒充真实运行截图。
+以下素材来自项目真实 React 前端，使用内置 **Mock 数据**在本地运行；界面素材的公开已获确认。核查结论、来源链接、置信度和看板数字均为演示数据，不代表本次调用了在线 LLM 或取得了对应评测成绩。
+
+![VeriFact 30 秒界面流程展示（Mock 数据）](assets/demo.gif)
+
+*30 秒截图序列：主张输入 → 核查报告 → Reviewer 队列与审核工作台 → Analytics。*
+
+| 首页 | AI 核查报告 |
+| --- | --- |
+| [![产品首页](assets/landing-page.png)](assets/landing-page.png) | [![核查结论、证据和来源](assets/verification-result.png)](assets/verification-result.png) |
+| **Reviewer 队列** | **AI 评估看板（指标区域）** |
+| [![人工审核队列](assets/reviewer-queue.png)](assets/reviewer-queue.png) | [![AI 评估看板](assets/analytics.png)](assets/analytics.png) |
+
+[查看人工审核工作台](assets/reviewer-workbench.png) · [素材说明与演示范围](docs/product-demo.md)
 
 ## My Contributions
 
@@ -79,7 +91,7 @@ React/Vite 通过 REST、multipart 和 SSE 访问 FastAPI；后端采用 Router 
 
 ## 源码与授权说明
 
-为遵守课程规定、团队权益和 Academic Integrity 要求，本仓库仅公开作品集文档与架构图，不公开私有源码、密钥、数据集或团队 Git 历史。是否公开个人代码或真实界面素材，将在确认学校政策和团队授权后决定。
+本仓库公开作品集文档、架构图及已确认可公开的界面截图与 GIF。原始源码仍保存在 UNSW 私有团队仓库中；本仓库不包含密钥、真实用户数据、私有数据集或团队 Git 历史。个人代码的公开需另行确认相关授权。
 
 本仓库暂不添加开源许可证；没有许可证不代表允许复制、修改或再分发。
 
